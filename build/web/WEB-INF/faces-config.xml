@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config version="2.0"
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
+    <navigation-rule>
+        <from-view-id>/cPanel.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>cliente</from-outcome>
+            <to-view-id>/cliente/index.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>produto</from-outcome>
+            <to-view-id>/produto/index.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/cliente/index.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>new</from-outcome>
+            <to-view-id>/cliente/new.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+        <navigation-rule>
+        <from-view-id>/cliente/new.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>index</from-outcome>
+            <to-view-id>/cliente/index.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/produto/index.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>new</from-outcome>
+            <to-view-id>/produto/new.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/produto/new.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>index</from-outcome>
+            <to-view-id>/produto/index.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
