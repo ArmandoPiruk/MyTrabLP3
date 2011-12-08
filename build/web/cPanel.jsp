@@ -23,6 +23,7 @@
             <li><h:commandLink value="Clientes" action="cliente" /></li>
             <li><h:commandLink value="Produtos" action="produto" /></li>
             <li><h:commandLink value="Pedidos" action="pedido" /></li>
+            <li><h:commandLink value="Usuarios" action="usuarios" /></li>
         </ul>
         </h:form>
     </body>
