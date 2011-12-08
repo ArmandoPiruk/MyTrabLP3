@@ -51,7 +51,8 @@
                 </h:column>
             </h:dataTable>
         
-        <h:commandLink value="Novo Cliente" action="new" />
+        <h:commandLink value="Novo Cliente" action="new" /> | 
+        <h:commandLink value="[ Voltar ]" action="CPANEL" />
         </h:form>
     </body>
 </html>

@@ -31,6 +31,10 @@
             <from-outcome>LOGIN</from-outcome>
             <to-view-id>/index.jsp</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>CPANEL</from-outcome>
+            <to-view-id>/cPanel.jsp</to-view-id>
+        </navigation-case>
     </navigation-rule>
         <navigation-rule>
         <from-view-id>/cliente/new.jsp</from-view-id>
@@ -48,6 +52,10 @@
         <navigation-case>
             <from-outcome>LOGIN</from-outcome>
             <to-view-id>/index.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>CPANEL</from-outcome>
+            <to-view-id>/cPanel.jsp</to-view-id>
         </navigation-case>
     </navigation-rule>
     <navigation-rule>
