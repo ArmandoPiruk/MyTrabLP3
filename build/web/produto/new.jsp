@@ -17,6 +17,7 @@
             Descrição: <h:inputText value="#{produtoMB.produto.descricao}" /><br />
             Preço: <h:inputText value="#{produtoMB.produto.preco}" /><br />
             <h:commandButton value="Salvar" action="#{produtoMB.salvar}" />
+            <h:commandLink value="[ Voltar ]" action="index" />
         </h:form>
     </body>
 </html>

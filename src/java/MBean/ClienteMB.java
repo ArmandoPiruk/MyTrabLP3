@@ -27,14 +27,6 @@ public class ClienteMB {
     ClienteDAO cDAO = new ClienteDAO();
     private String hello;
 
-    public static String logoff() {
-        FacesContext facesContext = FacesContext.getCurrentInstance();
-        ExternalContext externalContext = facesContext.getExternalContext();
-        HttpSession session = ((HttpServletRequest) externalContext.getRequest()).getSession();
-        session.setAttribute("LOGADO", "NAO");
-        return "LOGIN";
-    }
-
     public String getHello() {
         hello = "<em>";
         if(cliente.getId() != null)

@@ -22,6 +22,7 @@
             Nome: <h:inputText value="#{clienteMB.cliente.nome}" /><br />
             Email: <h:inputText value="#{clienteMB.cliente.email}" /><br />
             <h:commandButton value="Salvar" action="#{clienteMB.salvar}" />
+            <h:commandLink value="[ Voltar ]" action="index" />
         </h:form>
     </body>
 </html>
