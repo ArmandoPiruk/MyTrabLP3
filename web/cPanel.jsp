@@ -17,6 +17,7 @@
     </head>
     <body>
         <h:form>
+        <h:commandLink value="[ Logout ]" action="#{loginMB.logoff}" />
         <h1>Bem vindo</h1>
         
         <ul>

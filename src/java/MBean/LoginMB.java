@@ -67,12 +67,12 @@ public class LoginMB {
 
 
     /** Creates a new instance of Login */
-    public String logoff() {
+    public static String logoff() {
         FacesContext facesContext = FacesContext.getCurrentInstance();
         ExternalContext externalContext = facesContext.getExternalContext();
         HttpSession session = ((HttpServletRequest) externalContext.getRequest()).getSession();
         session.setAttribute("LOGADO", "NAO");
-        return "LOGOFF";
+        return "LOGIN";
     }
 
     public String getUserStatus() {

@@ -16,12 +16,20 @@
             <from-outcome>produto</from-outcome>
             <to-view-id>/produto/index.jsp</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>LOGIN</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
+        </navigation-case>
     </navigation-rule>
     <navigation-rule>
         <from-view-id>/cliente/index.jsp</from-view-id>
         <navigation-case>
             <from-outcome>new</from-outcome>
             <to-view-id>/cliente/new.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>LOGIN</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
         </navigation-case>
     </navigation-rule>
         <navigation-rule>
@@ -36,6 +44,10 @@
         <navigation-case>
             <from-outcome>new</from-outcome>
             <to-view-id>/produto/new.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>LOGIN</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
         </navigation-case>
     </navigation-rule>
     <navigation-rule>

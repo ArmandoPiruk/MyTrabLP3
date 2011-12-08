@@ -17,8 +17,9 @@
         <title>Clientes</title>
     </head>
     <body>
-        <h1>Listando clientes!</h1>
         <h:form>
+            <h:commandLink value="[ Logout ]" action="#{loginMB.logoff}" />
+            <h1>Listando clientes!</h1>
             <h:dataTable var="cliente" value="#{clienteMB.clientes}" >
                 <h:column>
                     <f:facet name="header">

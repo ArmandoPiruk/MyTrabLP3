@@ -2,14 +2,14 @@
 <Scene Scope="Project" version="2">
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
-        <Node id="produto/index.jsp" x="220" y="117" zoom="false"/>
-        <Node id="index.jsp" x="26" y="-85" zoom="false"/>
-        <Node id="cliente/new.jsp" x="456" y="265" zoom="false"/>
-        <Node id="produto/new.jsp" x="225" y="268" zoom="true"/>
-        <Node id="cliente/index.jsp" x="442" y="120" zoom="true"/>
-        <Node id="cPanel.jsp" x="330" y="13" zoom="false"/>
+        <Node id="produto/index.jsp" x="217" y="167" zoom="false"/>
+        <Node id="index.jsp" x="193" y="-155" zoom="true"/>
+        <Node id="cliente/new.jsp" x="444" y="364" zoom="true"/>
+        <Node id="produto/new.jsp" x="217" y="365" zoom="true"/>
+        <Node id="cliente/index.jsp" x="436" y="168" zoom="false"/>
+        <Node id="cPanel.jsp" x="330" y="13" zoom="true"/>
         <Node id="usuarios/new.jsp" x="-61" y="183" zoom="true"/>
-        <Node id="usuarios/index.jsp" x="13" y="233" zoom="true"/>
+        <Node id="usuarios/index.jsp" x="-47" y="295" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>

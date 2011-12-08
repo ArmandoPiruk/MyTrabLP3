@@ -4,12 +4,16 @@
  */
 
 package MBean;
-
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import entidades.Cliente;
 import DAO.ClienteDAO;
 import java.util.List;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 
 /**
  *
@@ -22,6 +26,14 @@ public class ClienteMB {
     private List<Cliente> clientes;
     ClienteDAO cDAO = new ClienteDAO();
     private String hello;
+
+    public static String logoff() {
+        FacesContext facesContext = FacesContext.getCurrentInstance();
+        ExternalContext externalContext = facesContext.getExternalContext();
+        HttpSession session = ((HttpServletRequest) externalContext.getRequest()).getSession();
+        session.setAttribute("LOGADO", "NAO");
+        return "LOGIN";
+    }
 
     public String getHello() {
         hello = "<em>";

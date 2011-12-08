@@ -11,8 +11,9 @@
         <title>Produtos</title>
     </head>
     <body>
-        <h1>Todos os produtos!</h1>
         <h:form>
+            <h:commandLink value="[ Logout ]" action="#{loginMB.logoff}" />
+            <h1>Todos os produtos!</h1>
             <h:dataTable var="produto" value="#{produtoMB.produtos}" >
                 <h:column>
                     <f:facet name="header">
