@@ -3,11 +3,11 @@
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
         <Node id="produto/index.jsp" x="62" y="123" zoom="false"/>
-        <Node id="index.jsp" x="79" y="28" zoom="true"/>
+        <Node id="index.jsp" x="32" y="18" zoom="false"/>
         <Node id="cliente/new.jsp" x="394" y="230" zoom="false"/>
         <Node id="produto/new.jsp" x="139" y="215" zoom="true"/>
-        <Node id="cliente/index.jsp" x="344" y="105" zoom="true"/>
         <Node id="cPanel.jsp" x="330" y="13" zoom="false"/>
+        <Node id="cliente/index.jsp" x="344" y="105" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>

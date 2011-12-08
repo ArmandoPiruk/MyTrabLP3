@@ -15,19 +15,27 @@
         <h:form>
             <h:dataTable var="produto" value="#{produtoMB.produtos}" >
                 <h:column>
-                    <f:facet name="header">ID: </f:facet>
+                    <f:facet name="header">
+                        <h:outputText value="ID" />
+                    </f:facet>
                     <h:outputText value="#{produto.id}" />
                 </h:column>
                 <h:column>
-                    <f:facet name="header">Nome: </f:facet>
+                    <f:facet name="header">
+                        <h:outputText value="Nome" />
+                    </f:facet>
                     <h:outputText value="#{produto.nome}" />
                 </h:column>
                 <h:column>
-                    <f:facet name="header">Preço: </f:facet>
+                    <f:facet name="header">
+                        <h:outputText value="Preco" />
+                    </f:facet>
                     <h:outputText value="#{produto.preco}" />
                 </h:column>
                 <h:column>
-                    <f:facet name="header">Descrição: </f:facet>
+                    <f:facet name="header">
+                        <h:outputText value="Descricao" />
+                    </f:facet>
                     <h:outputText value="#{produto.descricao}" />
                 </h:column>
                 <h:column>

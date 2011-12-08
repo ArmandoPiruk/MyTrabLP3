@@ -16,11 +16,11 @@
             <title>Trabalho LPIII</title>
         </head>
         <body>
-            <h1><h:outputText value="Login"/></h1>
             <h:form>
-                login: <h:inputText /><br />
-                password: <h:inputSecret /><br />
-                <h:commandButton value="Enviar" ondblclick="alert('Não Porra'); "/>
+            <h1><h:outputText value="Login"/></h1>
+                login: <h:inputText value="#{loginMB.usuario.login}" /><br />
+                password: <h:inputSecret value="#{loginMB.usuario.senha}" /><br />
+                <h:commandButton value="Enviar" action="#{loginMB.logar}" />
             </h:form>
         </body>
     </html>

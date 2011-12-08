@@ -11,6 +11,7 @@ import javax.faces.bean.RequestScoped;
 public class ProdutoMB {
     private Produto produto = new Produto();
     private List<Produto> produtos;
+    private String hello;
 
     ProdutoDAO pDAO = new ProdutoDAO();
 
@@ -48,5 +49,18 @@ public class ProdutoMB {
         return "index";
     }
 
+    public String getHello() {
+        hello = "<em>";
+        if(produto.getId() != null)
+            hello += "Editar ";
+        else
+            hello += "Novo ";
+        hello += "</em>";
+        return hello;
+    }
+
+    public void setHello(String hello) {
+        this.hello = hello;
+    }
 
 }

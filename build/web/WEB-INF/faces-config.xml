@@ -45,4 +45,11 @@
             <to-view-id>/produto/index.jsp</to-view-id>
         </navigation-case>
     </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/index.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>LOGADO</from-outcome>
+            <to-view-id>/cPanel.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
 </faces-config>

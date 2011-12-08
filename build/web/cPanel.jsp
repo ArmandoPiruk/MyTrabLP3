@@ -16,8 +16,9 @@
         <title>Painel de Controle</title>
     </head>
     <body>
-        <h1>Bem vindo: _</h1>
         <h:form>
+        <h1>Bem vindo</h1>
+        
         <ul>
             <li><h:commandLink value="Clientes" action="cliente" /></li>
             <li><h:commandLink value="Produtos" action="produto" /></li>

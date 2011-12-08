@@ -1,16 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package entidades;
 import java.util.*;
 import javax.persistence.*;
+import org.hibernate.annotations.Cascade;
 
-/**
- *
- * @author Armando
- */
 @Entity
 @Table(name="tb_pedido")
 public class Pedido {
@@ -30,6 +22,7 @@ public class Pedido {
     private Cliente cliente;
 
     @OneToMany(mappedBy="pedido", fetch= FetchType.LAZY)
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private List<Item> itens = new ArrayList<Item>();
 
     public Pedido() {

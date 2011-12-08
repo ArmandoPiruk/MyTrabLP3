@@ -10,7 +10,7 @@
         <title>New/Update Produtos</title>
     </head>
     <body>
-        <h1>New/Update Produtos</h1>
+        <h1><h:outputText value="#{produtoMB.hello}" escape="false" /> Produtos</h1>
         <h:form>
             <h:inputHidden value="#{produtoMB.produto.id}" />
             Nome: <h:inputText value="#{produtoMB.produto.nome}" /><br />
