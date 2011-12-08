@@ -25,6 +25,8 @@ import DAO.UsuarioDAO;
 public class LoginMB {
     private Usuario usuario;
     private String notice;
+    private String sesUsuario;
+
     /** Creates a new instance of LoginMB */
     public LoginMB() {
         usuario = new Usuario();
@@ -39,6 +41,15 @@ public class LoginMB {
             session.setAttribute("NOTICE",null);
         }
         return this.notice;
+   }
+    public String getSesUsuario(){
+    FacesContext facesContext = FacesContext.getCurrentInstance();
+        ExternalContext externalContext = facesContext.getExternalContext();
+        HttpSession session = ((HttpServletRequest) externalContext.getRequest()).getSession();
+        if(session.getAttribute("USUARIO") != null){
+            this.sesUsuario = (String)session.getAttribute("USUARIO");
+        }
+        return this.sesUsuario;
    }
     
     public boolean autenticar(Usuario user){
@@ -58,6 +69,7 @@ public class LoginMB {
         String status = "";
         if(this.autenticar(usuario)){
             session.setAttribute("LOGADO", "SIM");
+            session.setAttribute("USUARIO", usuario.getLogin());
             status = "LOGADO";
         }
         return status;

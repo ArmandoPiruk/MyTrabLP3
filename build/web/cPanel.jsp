@@ -18,7 +18,7 @@
     <body>
         <h:form>
         <h:commandLink value="[ Logout ]" action="#{loginMB.logoff}" />
-        <h1>Bem vindo</h1>
+        <h1>Bem vindo <em><h:outputText value="#{loginMB.sesUsuario}" /></em></h1>
         
         <ul>
             <li><h:commandLink value="Clientes" action="cliente" /></li>
