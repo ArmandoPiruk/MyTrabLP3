@@ -36,7 +36,7 @@ public class UsuarioMB {
     public String salvar(){
         uDAO.salvar(usuario);
         usuario = new Usuario(); //Para resetar os valores
-        return "index";
+        return "LOGADO";
     }
 
     public String destroy(){

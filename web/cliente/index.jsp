@@ -21,15 +21,21 @@
         <h:form>
             <h:dataTable var="cliente" value="#{clienteMB.clientes}" >
                 <h:column>
-                    <f:facet name="header">ID: </f:facet>
+                    <f:facet name="header">
+                        <h:outputText value="ID" />
+                    </f:facet>
                     <h:outputText value="#{cliente.id}" />
                 </h:column>
                 <h:column>
-                    <f:facet name="header">Nome: </f:facet>
+                    <f:facet name="header">
+                        <h:outputText value="Nome" />
+                    </f:facet>
                     <h:outputText value="#{cliente.nome}" />
                 </h:column>
                 <h:column>
-                    <f:facet name="header">Email: </f:facet>
+                    <f:facet name="header">
+                        <h:outputText value="Email" />
+                    </f:facet>
                     <h:outputText value="#{cliente.email}" />
                 </h:column>
                 <h:column>

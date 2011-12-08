@@ -51,5 +51,16 @@
             <from-outcome>LOGADO</from-outcome>
             <to-view-id>/cPanel.jsp</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>NEW_USUARIO</from-outcome>
+            <to-view-id>/usuarios/new.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/usuarios/new.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>LOGADO</from-outcome>
+            <to-view-id>/cPanel.jsp</to-view-id>
+        </navigation-case>
     </navigation-rule>
 </faces-config>

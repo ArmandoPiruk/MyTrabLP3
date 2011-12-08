@@ -21,6 +21,21 @@ public class ClienteMB {
     private Cliente cliente;// = new Cliente();
     private List<Cliente> clientes;
     ClienteDAO cDAO = new ClienteDAO();
+    private String hello;
+
+    public String getHello() {
+        hello = "<em>";
+        if(cliente.getId() != null)
+            hello += "Editar ";
+        else
+            hello += "Novo ";
+        hello += "</em>";
+        return hello;
+    }
+
+    public void setHello(String hello) {
+        this.hello = hello;
+    }
 
     /** Creates a new instance of ClienteMB */
     public ClienteMB() {

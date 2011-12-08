@@ -11,7 +11,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>New/Update Usuarios</h1>
+        <h1>New Usuario</h1>
         <h:form>
             <h:inputHidden value="#{usuarioMB.usuario.id}" />
             Login: <h:inputText value="#{usuarioMB.usuario.login}" /><br />

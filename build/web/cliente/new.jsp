@@ -16,7 +16,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>New/Update Cliente</h1>
+        <h1><h:outputText value="#{clienteMB.hello}" escape="false" /> Cliente</h1>
         <h:form>
             <h:inputHidden value="#{clienteMB.cliente.id}" />
             Nome: <h:inputText value="#{clienteMB.cliente.nome}" /><br />

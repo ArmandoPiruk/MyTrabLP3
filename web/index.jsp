@@ -18,9 +18,11 @@
         <body>
             <h:form>
             <h1><h:outputText value="Login"/></h1>
+            <h4><h:outputText value="#{loginMB.notice}" style="color:red" /></h4>
                 login: <h:inputText value="#{loginMB.usuario.login}" /><br />
                 password: <h:inputSecret value="#{loginMB.usuario.senha}" /><br />
                 <h:commandButton value="Enviar" action="#{loginMB.logar}" />
+                <h:commandLink value="Criar novo usuario..." action="NEW_USUARIO" />
             </h:form>
         </body>
     </html>

@@ -55,7 +55,7 @@ public class UsuarioDAO {
         ses.beginTransaction().begin();
         ses.saveOrUpdate(user);
         ses.getTransaction().commit();
-        ses.close();
+        //ses.close();
     }
     public List<Usuario> getClientes(){
         ses.beginTransaction().begin();
