@@ -19,7 +19,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author ahummel
  */
-@WebFilter(filterName = "FiltroWeb", urlPatterns = {"/pages/cliente/*","/pages/produto/*","/pages/pedidos/*"})
+@WebFilter(filterName = "FiltroWeb", urlPatterns = {"/pages/cliente/*","/pages/produto/*","/pages/pedidos/*","/pages/cPanel.jsp"})
 public class FiltroWeb implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {
         System.out.println("Iniciou");
@@ -36,7 +36,7 @@ public class FiltroWeb implements Filter {
                 else{
                     //System.err.println("Usuario NÃO Logado");
                     session.setAttribute("NOTICE","Usuario não esta logado") ;
-                    ((HttpServletResponse)response).sendRedirect("../index.jsp");
+                    ((HttpServletResponse)response).sendRedirect("../pages/index.jsp");
                 }
             }
             
