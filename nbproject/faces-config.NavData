@@ -5,10 +5,12 @@
         <Node id="produto/index.jsp" x="217" y="167" zoom="false"/>
         <Node id="index.jsp" x="193" y="-155" zoom="true"/>
         <Node id="cliente/new.jsp" x="444" y="364" zoom="true"/>
+        <Node id="pedido/index.jsp" x="669" y="169" zoom="true"/>
         <Node id="produto/new.jsp" x="217" y="365" zoom="true"/>
-        <Node id="cliente/index.jsp" x="436" y="168" zoom="false"/>
         <Node id="cPanel.jsp" x="330" y="13" zoom="true"/>
         <Node id="usuarios/new.jsp" x="-61" y="183" zoom="true"/>
+        <Node id="cliente/index.jsp" x="436" y="168" zoom="false"/>
+        <Node id="pedido/new.jsp" x="677" y="364" zoom="true"/>
         <Node id="usuarios/index.jsp" x="-47" y="295" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>

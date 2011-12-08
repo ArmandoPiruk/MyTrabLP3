@@ -9,13 +9,14 @@ import javax.faces.bean.RequestScoped;
 @ManagedBean
 @RequestScoped
 public class ProdutoMB {
-    private Produto produto = new Produto();
+    private Produto produto;
     private List<Produto> produtos;
     private String hello;
 
     ProdutoDAO pDAO = new ProdutoDAO();
 
     public ProdutoMB() {
+        produto = new Produto();
     }
 
     public Produto getProduto() {

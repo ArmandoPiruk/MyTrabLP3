@@ -15,6 +15,7 @@ import org.hibernate.Session;
  * @author Armando
  */
 public class ClienteDAO {
+    public List<Cliente> get;
 
     public void salvar(Cliente cli){
         Session ses = HibernateUtil.getSession();
