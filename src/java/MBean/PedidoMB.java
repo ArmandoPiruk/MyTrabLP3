@@ -18,6 +18,7 @@ public class PedidoMB {
     private Cliente cliente = new Cliente();
     private List<Item> itens;
     private String comboBoxClientes;
+    private List<Pedido> pedidos;
 
     private String getComboBoxClientes(){
         this.comboBoxClientes = "";
@@ -57,6 +58,24 @@ public class PedidoMB {
 
     public void setPedido(Pedido pedido) {
         this.pedido = pedido;
+    }
+
+    public List<Pedido> getPedidos() {
+        PedidoDAO pDAO = new PedidoDAO();
+        pedidos = pDAO.getPedidos();
+        return pedidos;
+
+    }
+
+    public void setPedidos(List<Pedido> pedidos) {
+        this.pedidos = pedidos;
+    }
+
+    public boolean getListaVazia(){
+        boolean boo = false;
+        if(pedidos.size() == 0)
+            boo = true;
+        return boo ;
     }
 
 }

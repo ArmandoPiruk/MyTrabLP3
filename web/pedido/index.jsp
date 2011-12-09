@@ -20,11 +20,30 @@
     <body>
         <h:form>
             <h1>Pedidos</h1>
+            <h3>Novo Pedido</h3>
             <em>Cliente: </em>
             <h:selectOneMenu id="selectCliente" value="#{pedidoMB.cliente.id}" >
                 <f:selectItems value="#{clienteMB.options}" />
             </h:selectOneMenu>
             <h:commandButton value="NovoPedido" action="new" />
+            <hr />
+            <h3>Pedidos efetuados</h3>
+            <h:dataTable value="#{pedidoMB.pedidos}" var="pedido" rendered="#{not pedidoMB.listaVazia}" >
+                    <h:column >
+                        <f:facet name="header">
+                            <h:outputText value="Numero" />
+                        </f:facet>
+                        <h:outputText value="#{pedido.numero}" />
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Total" />
+                        </f:facet>
+                        <h:outputText value="#{pedido.total}" />
+                    </h:column>
+                </h:dataTable>
+                <h:outputText  value="Nenhum Pedido Cadastrado" rendered="#{pedidoMB.listaVazia}" />
+
         </h:form>
     </body>
 </html>
