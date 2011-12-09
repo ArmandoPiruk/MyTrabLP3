@@ -20,13 +20,9 @@ public class PedidoMB {
     private String comboBoxClientes;
     private List<Pedido> pedidos;
 
-    private String getComboBoxClientes(){
-        this.comboBoxClientes = "";
-        ClienteDAO cDAO = new ClienteDAO();
-        List<Cliente> clientes = cDAO.getClientes();
-        return this.comboBoxClientes;
-     }
-
+    FacesContext facesContext = FacesContext.getCurrentInstance();
+    ExternalContext externalContext = facesContext.getExternalContext();
+    HttpSession session = ((HttpServletRequest) externalContext.getRequest()).getSession();
 
     public PedidoMB() {
         pedido = new Pedido();
@@ -49,7 +45,18 @@ public class PedidoMB {
     }
 
     public String novo(){
+        session.setAttribute("clienteId", cliente.getId());
+        //session.setAttribute("clienteNome", cliente.getNome());
         return "new";
+    }
+
+    public String getSesClienteNome(){
+        return (String) session.getAttribute("clienteNome");
+    }
+    public String getSesClienteId(){
+        //atribuido valor em: public String novo()
+        //return (String) session.getAttribute("clienteId");
+        return "Ver porque nao esta trazendo os dados";
     }
 
     public Pedido getPedido() {
