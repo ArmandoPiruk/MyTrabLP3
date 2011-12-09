@@ -1,8 +1,3 @@
-<%-- 
-    Document   : cPanel
-    Created on : 06/12/2011, 20:31:53
-    Author     : Armando
---%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%@taglib prefix="f" uri="http://java.sun.com/jsf/core"%>

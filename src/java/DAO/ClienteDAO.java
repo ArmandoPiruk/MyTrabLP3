@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package DAO;
 
 import Util.HibernateUtil;
@@ -10,10 +5,6 @@ import entidades.Cliente;
 import java.util.List;
 import org.hibernate.Session;
 
-/**
- *
- * @author Armando
- */
 public class ClienteDAO {
     public List<Cliente> get;
 

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package DAO;
 
 import Util.HibernateUtil;
@@ -11,10 +7,6 @@ import java.util.*;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
-/**
- *
- * @author Armando
- */
 public class UsuarioDAO {
     Session ses = HibernateUtil.getSession();
 

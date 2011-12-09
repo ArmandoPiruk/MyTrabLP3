@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package filtros;
 import java.io.IOException;
 import javax.servlet.Filter;
@@ -15,10 +10,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-/**
- *
- * @author ahummel
- */
+
 @WebFilter(filterName = "FiltroWeb", urlPatterns = {"/pages/cliente/*","/pages/produto/*","/pages/pedidos/*","/pages/cPanel.jsp"})
 public class FiltroWeb implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {

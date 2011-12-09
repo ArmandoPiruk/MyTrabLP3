@@ -1,17 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package entidades;
 import java.util.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- *
- * @author Armando
- */
 @Entity
 @Table(name="tb_produto")
 public class Produto implements Serializable {

@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package MBean;
 
 import javax.faces.bean.ManagedBean;
@@ -16,10 +11,6 @@ import javax.servlet.http.HttpSession;
 import entidades.Usuario;
 import DAO.UsuarioDAO;
 
-/**
- *
- * @author Armando
- */
 @ManagedBean
 @RequestScoped
 public class LoginMB {
