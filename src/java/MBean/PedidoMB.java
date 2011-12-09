@@ -73,7 +73,7 @@ public class PedidoMB {
 
     public boolean getListaVazia(){
         boolean boo = false;
-        if(pedidos.size() == 0)
+        if((getPedidos().size() == 0) || (pedidos == null))
             boo = true;
         return boo ;
     }
