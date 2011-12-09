@@ -21,10 +21,10 @@
         <h:form>
             <h1>Pedidos</h1>
             <em>Cliente: </em>
-            <h:selectOneMenu id="selectCar" value="#{pedidoMB.cliente}">
-                <f:selectItems value="#{clienteMB.clientes}" />
+            <h:selectOneMenu id="selectCliente" value="#{pedidoMB.cliente.id}" >
+                <f:selectItems value="#{clienteMB.options}" />
             </h:selectOneMenu>
-            <h:commandButton value="Novo Pedido" action="new" />
+            <h:commandButton value="NovoPedido" action="new" />
         </h:form>
     </body>
 </html>

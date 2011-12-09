@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 @RequestScoped
 public class PedidoMB {
     private Pedido pedido;
-    private Cliente cliente;
+    private Cliente cliente = new Cliente();
     private List<Item> itens;
     private String comboBoxClientes;
 
@@ -45,6 +45,18 @@ public class PedidoMB {
 
     public void setItens(List<Item> itens) {
         this.itens = itens;
+    }
+
+    public String novo(){
+        return "new";
+    }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
     }
 
 }

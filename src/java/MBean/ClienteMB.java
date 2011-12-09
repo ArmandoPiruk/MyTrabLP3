@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import entidades.Cliente;
 import DAO.ClienteDAO;
+import java.util.ArrayList;
 import java.util.List;
+import javax.faces.model.SelectItem;
 
 /**
  *
@@ -23,9 +25,28 @@ import java.util.List;
 @RequestScoped
 public class ClienteMB {
     private Cliente cliente;// = new Cliente();
-    private List<Cliente> clientes;
     ClienteDAO cDAO = new ClienteDAO();
+    private List<Cliente> clientes = cDAO.getClientes();
+
     private String hello;
+
+    
+    public ArrayList<SelectItem> getOptions(){
+        ArrayList<SelectItem> options = new ArrayList<SelectItem>();
+
+        for(int i = 0 ; i < clientes.size(); i++){
+            options.add(new SelectItem(clientes.get(i).getId(),clientes.get(i).getNome()));
+        }
+        return options;
+    }
+    /*
+    private SelectItem[] familyNames = {
+    new SelectItem((Integer) 1,"Operations"),
+    new SelectItem((Integer) 2, "Special"),
+    new SelectItem((Integer) 3, "Support")
+    };
+     *
+     */
 
     public String getHello() {
         hello = "<em>";
@@ -79,6 +100,5 @@ public class ClienteMB {
         return "index";
     }
 
-
-
+    
 }
